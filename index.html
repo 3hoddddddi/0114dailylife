@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Life Feed - Discover What Matters</title>
+    <meta name="description" content="Curated insights for a smarter, better lifestyle.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="container mx-auto px-6 h-16 flex items-center justify-center md:justify-between">
+            <a href="#" class="text-xl md:text-2xl font-bold tracking-tight text-slate-900 relative z-10">
+                DailyLife<span class="text-blue-600">Feed</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-500">
+                <a href="#featured" class="hover:text-blue-600 transition">Featured</a>
+                <a href="#editor-pick" class="hover:text-blue-600 transition">Editor's Pick</a>
+                <a href="contacthomepage.html" class="px-5 py-2 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition text-xs font-bold">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <div class="absolute inset-0 z-0 opacity-40" style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 32px 32px;"></div>
+        
+        <div class="relative z-10 container mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider mb-8 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                Daily Updates
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                Your Daily Source of <br class="hidden md:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-600">Living Inspiration</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                We curate the signals from the noise. Discover trends in home, tech, and lifestyle that actually matter.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#featured" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200 hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    Start Reading
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="featured" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center md:text-left mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Latest Feed</h2>
+                <p class="text-slate-500 mt-2 text-lg">Fresh stories curated for you today.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group cursor-pointer flex flex-col h-full border border-slate-100">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden h-56 relative">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=900&auto=format&fit=crop" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Interior">
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-slate-800 shadow-sm">Decor</div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col text-center md:text-left">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition">The Minimalist Guide to Home Renovation</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6 flex-1">
+                            Creating space doesn't mean emptying your room. It means choosing what matters.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 flex items-center justify-center md:justify-between text-xs text-slate-400 font-medium">
+                            <span>5 min read</span>
+                            <span>Today</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group cursor-pointer flex flex-col h-full border border-slate-100">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden h-56 relative">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=900&auto=format&fit=crop" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Tech">
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-slate-800 shadow-sm">Life Hacks</div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col text-center md:text-left">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition">Why Smart Protection is Essential in 2026</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6 flex-1">
+                            Navigating the complex world of personal coverage and future-proofing your assets.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 flex items-center justify-center md:justify-between text-xs text-slate-400 font-medium">
+                            <span>4 min read</span>
+                            <span>Yesterday</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group cursor-pointer flex flex-col h-full border border-slate-100">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden h-56 relative">
+                        <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?q=80&w=900&auto=format&fit=crop" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Gadgets">
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-slate-800 shadow-sm">Discovery</div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col text-center md:text-left">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition">Hidden Gems: Products You Didn't Know You Needed</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6 flex-1">
+                            A curated list of items that bring unexpected joy and utility to your daily grind.
+                        </p>
+                        <div class="pt-6 border-t border-slate-50 flex items-center justify-center md:justify-between text-xs text-slate-400 font-medium">
+                            <span>6 min read</span>
+                            <span>2 days ago</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="editor-pick" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-slate-900 rounded-3xl overflow-hidden relative shadow-2xl">
+                <div class="absolute top-0 right-0 w-full md:w-2/3 h-full bg-gradient-to-l from-slate-800 to-transparent opacity-50"></div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center p-8 md:p-16 relative z-10">
+                    <div class="text-center md:text-left order-2 md:order-1">
+                        <span class="inline-block py-1 px-3 rounded bg-blue-600 text-white text-xs font-bold uppercase tracking-wider mb-6">Editor's Choice</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">Designing a Life You Love</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed text-lg">
+                            We believe that information is the key to transformation. Knowledge empowers you to make the right choices for your home and future.
+                        </p>
+                        <a href="#" class="inline-flex items-center bg-white text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-slate-100 transition">
+                            Read Full Editorial
+                        </a>
+                    </div>
+                    <div class="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg transform md:-rotate-1 hover:rotate-0 transition duration-500 order-1 md:order-2">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=900&auto=format&fit=crop" 
+                             alt="Editorial" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 pt-20">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex flex-col items-center text-center pb-10">
+                <a href="#" class="text-3xl font-bold tracking-tighter text-slate-900 mb-6">
+                    DailyLife<span class="text-blue-600">Feed</span>.
+                </a>
+                <p class="text-slate-500 text-sm max-w-md mx-auto leading-relaxed">
+                    Your trusted source for daily insights. We are dedicated to providing high-quality content that enhances your everyday life.
+                </p>
+            </div>
+
+            <div class="border-t border-slate-200 py-10 flex flex-col items-center gap-6">
+                
+                <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full md:w-auto">
+                    <a href="privacyhomepage.html" class="text-slate-500 hover:text-slate-900 text-sm font-medium transition py-1">
+                        Privacy Policy
+                    </a>
+                    <a href="termshomepage.html" class="text-slate-500 hover:text-slate-900 text-sm font-medium transition py-1">
+                        Terms of Service
+                    </a>
+                    <a href="contacthomepage.html" class="text-slate-500 hover:text-slate-900 text-sm font-medium transition py-1">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="text-slate-400 text-xs text-center">
+                    &copy; 2026 DailyLifeFeed.com. All rights reserved.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
