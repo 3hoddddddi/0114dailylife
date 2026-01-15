@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Bathroom Remodel Savings</title>
+    <meta property="og:type" content="website">
+<meta property="og:title" content="2026 Bathroom Remodel Savings">
+<meta property="og:description" content="Save big on your bathroom remodel.">
+<meta property="og:image" content="https://home.zynarix.com/bathcard.webp">
+<script src="https://cdn.tailwindcss.com"></script>    
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        .bg-fixed-cover {
+            /* Updated image path for Bathroom */
+            background-image: url('./bathroom/bathroom-hero-direct.webp'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+        }
+        
+        .bg-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+
+        .quiz-card {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .quiz-option {
+            border: 2px solid #e5e7eb;
+            transition: all 0.2s;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .quiz-option:hover {
+            border-color: #16a34a;
+            background-color: #f0fdf4;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes subtle-breath {
+            0% { 
+                border-color: #22c55e; 
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.1);
+                background-color: #f0fdf4; 
+            }
+            50% { 
+                border-color: #16a34a; 
+                box-shadow: 0 0 15px rgba(34, 197, 94, 0.3); 
+                background-color: #dcfce7; 
+            }
+            100% { 
+                border-color: #22c55e; 
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.1);
+                background-color: #f0fdf4; 
+            }
+        }
+
+        .quiz-option.highlighted {
+            animation: subtle-breath 3s infinite ease-in-out; 
+            font-weight: 700; 
+            color: #1f2937; 
+        }
+
+        .step { display: none; }
+        .step.active { display: block; animation: slideUp 0.4s ease-out; }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .spinner {
+            width: 40px; height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #16a34a;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); transform: scale(1); }
+            70% { box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); transform: scale(1.02); }
+            100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); transform: scale(1); }
+        }
+        .btn-pulse-custom {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen text-gray-800">
+
+    <div class="bg-fixed-cover"></div>
+    <div class="bg-overlay"></div>
+
+    <nav class="w-full py-6 text-center z-10 relative">
+        <span class="font-bold text-2xl text-white tracking-tight drop-shadow-lg">
+            Home<span class="text-green-500">Tips</span>
+        </span>
+    </nav>
+
+    <div class="flex-grow flex items-center justify-center p-4 z-10">
+        <div class="quiz-card rounded-2xl w-full max-w-lg overflow-hidden relative">
+            
+            <div class="h-1.5 bg-gray-100 w-full">
+                <div class="h-full bg-green-600 progress-bar transition-all duration-500" style="width: 15%"></div>
+            </div>
+
+            <div class="p-6 md:p-10">
+
+                <div id="step-1" class="step active">
+                    <div class="text-center mb-8">
+                        <span class="bg-blue-50 text-blue-700 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-widest border border-blue-100">January 2026 Update</span>
+                        
+                        <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-4 leading-tight">
+                            See How Much You Can Save On Bathroom Upgrades
+                        </h1>
+                        
+                        <p class="text-gray-500 mt-3 text-sm md:text-base">
+                            Take this 30-second check to compare quotes and find local remodel deals.
+                        </p>
+                    </div>
+                    
+                    <h3 class="text-lg font-bold text-gray-800 mb-5 text-center">Do you own your home?</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="quiz-option p-5 rounded-xl group highlighted" onclick="nextStep(2)">
+                            <span class="font-bold text-gray-800 text-lg">Yes, I am a Homeowner</span>
+                        </div>
+                        <div class="quiz-option p-4 rounded-xl group" onclick="alert('This program is specifically for homeowners.')">
+                            <span class="font-semibold text-gray-600 text-lg">No, I rent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-2" class="step">
+                     <div class="text-center mb-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Project Goals</h2>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-gray-800 mb-5 text-center">What is your primary goal for this project?</h3>
+                    <div class="space-y-3">
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(3)">Modernize the Look</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(3)">Improve Safety / Accessibility</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(3)">Fix Damage / Leaks</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(3)">Increase Home Value</div>
+                    </div>
+                </div>
+
+                <div id="step-3" class="step">
+                    <div class="text-center mb-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Service Type</h2>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-gray-800 mb-5 text-center">What type of upgrade do you need?</h3>
+                    <div class="space-y-3">
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(4)">Full Bathroom Remodel</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(4)">Shower Replacement</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(4)">Bathtub Replacement</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(4)">Walk-in Tub Conversion</div>
+                    </div>
+                </div>
+
+                <div id="step-4" class="step">
+                    <div class="text-center mb-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Current Condition</h2>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-gray-800 mb-5 text-center">Describe the current state of your bathroom:</h3>
+                    <div class="space-y-3">
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(5)">Outdated / Old Style</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(5)">Mold / Water Damage</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(5)">Hard to Clean</div>
+                        <div class="quiz-option p-4 rounded-xl font-semibold text-gray-700" onclick="nextStep(5)">Good, just want a change</div>
+                    </div>
+                </div>
+
+                <div id="step-5" class="step">
+                    <div class="text-center mb-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Final Step</h2>
+                        <p class="text-gray-500 text-sm mt-1">Enter zip to search local contractors.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <input class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl py-4 px-4 text-center text-xl font-bold tracking-widest focus:outline-none focus:border-green-500 focus:bg-white transition" id="zip" type="tel" placeholder="Enter Zip Code" maxlength="5">
+                    </div>
+                    
+                    <button onclick="startLoading()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-lg text-lg transition transform hover:scale-[1.02]">
+                        Find Free Quotes &raquo;
+                    </button>
+                </div>
+
+                <div id="step-loading" class="step text-center py-8">
+                    <div class="flex justify-center mb-6">
+                        <div class="spinner"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" id="loading-text">Verifying Zip Code...</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-4">
+                        <div class="bg-green-600 h-2.5 rounded-full transition-all duration-1000" style="width: 10%" id="loading-bar"></div>
+                    </div>
+                </div>
+
+                <div id="step-success" class="step text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-circle-check text-4xl text-green-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Contractors Found!</h2>
+
+                    <p class="text-gray-600 mb-8 text-sm leading-relaxed px-2">
+                        Great news. We have identified available bathroom remodeling experts in <strong id="display-zip" class="text-gray-800">your area</strong>.
+                        <br><br>
+                        <strong>Next Step:</strong> Complete your project details on the next page to view your free quotes.
+                    </p>
+                    
+                    <a href="YOUR_TRACKING_LINK_HERE" class="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-xl text-xl btn-pulse-custom tracking-link">
+                        See Pricing & Savings &raquo;
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 text-center">
+                 <p class="text-[10px] text-gray-400 leading-tight">
+                    <i class="fa-solid fa-lock text-gray-300 mr-1"></i> Your information is secure.
+                 </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full py-6 text-center z-10 relative text-gray-300">
+        <div class="flex flex-wrap justify-center gap-4 mb-3 text-xs font-semibold text-white/70">
+            <a href="./bathroom/terms.html" class="hover:text-white hover:underline">Terms of Service</a>
+            <span>|</span>
+            <a href="./bathroom/privacy.html" class="hover:text-white hover:underline">Privacy Policy</a>
+            <span>|</span>
+            <a href="./bathroom/contact.html" class="hover:text-white hover:underline">Contact Us</a>
+        </div>
+        <div class="px-4 max-w-2xl mx-auto">
+            <p class="text-[10px] text-white/50 leading-relaxed">
+                **Marketing Disclosure:** This website is a marketplace. The owner has a monetary connection to the product and services advertised on the site.
+            </p>
+            <p class="text-[10px] text-white/50 mt-2">&copy; 2026 HomeTips. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const trackingUrl = "/go-bath"; 
+        document.querySelectorAll('.tracking-link').forEach(link => { link.href = trackingUrl; });
+
+        function nextStep(stepNumber) {
+            document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step-' + stepNumber).classList.add('active');
+            
+            const progress = document.querySelector('.progress-bar');
+            if(stepNumber === 2) progress.style.width = '35%';
+            if(stepNumber === 3) progress.style.width = '55%';
+            if(stepNumber === 4) progress.style.width = '75%';
+            if(stepNumber === 5) progress.style.width = '90%';
+        }
+
+        function startLoading() {
+            const zip = document.getElementById('zip').value;
+            if(zip.length < 5) { alert("Please enter a valid zip code."); return; }
+            
+            document.getElementById('display-zip').innerText = zip;
+
+            document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step-loading').classList.add('active');
+            document.querySelector('.progress-bar').style.width = '95%';
+
+            // Updated loading text for Bathroom context
+            const texts = ["Checking Local Contractors...", "Identifying Specials...", "Finalizing Match..."];
+            let i = 0;
+            const textEl = document.getElementById('loading-text');
+            const barEl = document.getElementById('loading-bar');
+            
+            const interval = setInterval(() => {
+                i++;
+                if (i < texts.length) {
+                    textEl.innerText = texts[i];
+                    barEl.style.width = (30 + i*30) + '%';
+                } else {
+                    clearInterval(interval);
+                    barEl.style.width = '100%';
+                    setTimeout(showSuccess, 500);
+                }
+            }, 1000);
+        }
+
+        function showSuccess() {
+            document.getElementById('step-loading').classList.remove('active');
+            document.getElementById('step-success').classList.add('active');
+            document.querySelector('.progress-bar').style.width = '100%';
+        }
+    </script>
+
+</body>
+</html>
